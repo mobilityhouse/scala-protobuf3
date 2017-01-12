@@ -1,0 +1,6 @@
+version: '2'
+services:
+  workbench:
+    build:
+      context: .
+    entrypoint: /bin/bash
