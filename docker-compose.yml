@@ -4,3 +4,5 @@ services:
     build:
       context: .
     entrypoint: /bin/bash
+    volumes:
+      - ".:/src"
