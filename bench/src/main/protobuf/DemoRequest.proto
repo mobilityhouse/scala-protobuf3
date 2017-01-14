@@ -1,0 +1,18 @@
+syntax = "proto3";
+package io.tmh.zeta;
+
+import "google/protobuf/any.proto";
+
+message RequestAny {
+  string module = 1;
+  map<string, google.protobuf.Any> variables = 2;
+}
+
+message RequestTypeClustered {
+  string module = 1;
+  map<string, int32> integers32 = 2;
+  map<string, string> strings = 3;
+  map<string, float> floats = 4;
+  map<string, double> doubles = 5;
+  map<string, bool> booleans= 6;
+}
