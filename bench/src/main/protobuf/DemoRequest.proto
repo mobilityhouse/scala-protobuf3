@@ -4,9 +4,28 @@ package io.tmh.zeta.msg;
 
 import "google/protobuf/any.proto";
 
+message AnyBundle {
+  string key = 1;
+  google.protobuf.Any value = 2;
+}
+
+message Integer32Bundle {
+  string key = 1;
+  int32 value = 2;
+}
+
+message StringBundle {
+  string key = 1;
+  string value = 2;
+}
+
 message RequestAny {
   string module = 1;
   map<string, google.protobuf.Any> variables = 2;
+}
+
+message RequestAnyList {
+  repeated google.protobuf.Any variables = 1;
 }
 
 message RequestTypeClustered {
