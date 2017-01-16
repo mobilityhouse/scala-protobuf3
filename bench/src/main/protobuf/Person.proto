@@ -1,5 +1,5 @@
 syntax = "proto3";
-package foo.bar;
+package io.tmh.zeta.msg.experiment;
 
 import "google/protobuf/timestamp.proto";
 
