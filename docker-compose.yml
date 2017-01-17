@@ -5,4 +5,5 @@ services:
       context: .
     entrypoint: /bin/bash
     volumes:
-      - ".:/src"
+      - "./bench:/src"
+    working_dir: /src
