@@ -1,5 +1,7 @@
 # Scala Protobuf 3 Workbench
 
+[![Docker Automated buil](https://img.shields.io/docker/automated/mobilityhouse/scala-protobuf3.svg)](https://hub.docker.com/r/mobilityhouse/scala-protobuf3/) 
+
 This image provides all of the necessary tooling to compile Scala code from
 proto schemas.
 
