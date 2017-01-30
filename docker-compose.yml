@@ -3,7 +3,6 @@ services:
   workbench:
     build:
       context: .
-    entrypoint: /bin/bash
     volumes:
       - "./bench:/workdir"
     working_dir: /workdir

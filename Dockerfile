@@ -12,3 +12,4 @@ RUN apt-get update && apt-get install -y \
 ADD bench /tmp/sbt-work-dir
 WORKDIR /tmp/sbt-work-dir
 RUN sbt reload
+CMD sbt compile
