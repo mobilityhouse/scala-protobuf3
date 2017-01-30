@@ -9,3 +9,7 @@ RUN apt-get update && apt-get install -y \
     --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823 \
   && apt-get update \
   && apt-get install sbt
+ADD bench /tmp/sbt-work-dir
+WORKDIR /tmp/sbt-work-dir
+RUN sbt reload
+CMD sbt compile
